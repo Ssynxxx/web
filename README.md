@@ -1,2 +1,9 @@
 # kelompok7.github.io
-Project Website Freelance Kelompok 7
+
+Kelompok 7
+
+535210066 Calvin 
+535210071 William 
+Budianto 535210073 
+Jordy Apriyanto 
+535210087 Dhiwa Aqsha
