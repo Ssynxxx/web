@@ -71,284 +71,286 @@
 
         <br>
 
-        <div class="row">
-            <div class="col" style="margin-left: 80px;">
-                <div class="wrapper border">
-                    <header>
-                        <h3>Budget</h3>
-                        <input type="checkbox" id="job" name="job" value="fixedprice">
-                        <label for="fixedprice">Fixed price project</label><br>
-                    </header>
-                    <div class="price-input">
-                        <div class="field">
-                            <span>Min</span>
-                            <input type="number" class="input-min" value="2500">
-                        </div>
-                        <div class="separator">-</div>
-                        <div class="field">
-                            <span>Max</span>
-                            <input type="number" class="input-max" value="7500">
-                        </div>
-                    </div>
-                    <div class="slider">
-                        <div class="progress"></div>
-                    </div>
-                    <div class="range-input">
-                        <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
-                        <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
-                    </div>
-                    <br>
-                    <header>
-                        <input type="checkbox" id="job" name="job" value="hourlyprojects">
-                        <label for="hourlyprojects">Hourly Projects</label><br>
-                    </header>
-                    <div class="price-input">
-                        <div class="field">
-                            <span>Min</span>
-                            <input type="number" class="input-min" value="2500">
-                        </div>
-                        <div class="separator">-</div>
-                        <div class="field">
-                            <span>Max</span>
-                            <input type="number" class="input-max" value="7500">
-                        </div>
-                    </div>
-                    <div class="slider">
-                        <div class="progress"></div>
-                    </div>
-                    <div class="range-input">
-                        <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
-                        <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
-                    </div>
-                    <br>
-                    <select class="custom-select" id="duration" aria-label="duration">
-                        <option selected>All Duration</option>
-                        <option value="1">Less than 1 week</option>
-                        <option value="2">1 week to 4 weeks</option>
-                        <option value="3">1 month to 3 months</option>
-                        <option value="4">3 months to 6 months</option>
-                        <option value="5">over 6 months/ongoing</option>
-                        <option value="6">unspecified</option>
-                    </select>
-                    <br>
-                    <br>
-                    <header>
-                        <input type="checkbox" id="job" name="job" value="contests">
-                        <label for="contests">Contests</label><br>
-                    </header>
-                    <div class="price-input">
-                        <div class="field">
-                            <span>Min</span>
-                            <input type="number" class="input-min" value="2500">
-                        </div>
-                        <div class="separator">-</div>
-                        <div class="field">
-                            <span>Max</span>
-                            <input type="number" class="input-max" value="7500">
-                        </div>
-                    </div>
-                    <div class="slider">
-                        <div class="progress"></div>
-                    </div>
-                    <div class="range-input">
-                        <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
-                        <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
-                    </div>
-                </div>
-                <br><div class="wrapper border">
-                    <div class="border-bottom">
-                        <h3>Type</h3>
-                        <input type="checkbox" id="typejob" name="local" value="local">
-                        <label for="fixedprice">Local Jobs</label><br>
-                        <input type="checkbox" id="typejob" name="featured" value="featured">
-                        <label for="fixedprice">Featured Jobs</label><br>
-                        <input type="checkbox" id="typejob" name="recruiter" value="recruiter">
-                        <label for="fixedprice">Recruiter Jobs</label><br>
-                        <input type="checkbox" id="typejob" name="fulltime" value="fulltime">
-                        <label for="fixedprice">Full Time Jobs</label><br>
-                    </div>
-                    <br>
-                    <div class="border-bottom">
-                        <h3>Skills</h3>
-                        <input type="checkbox" id="typeskills" name="net5.0/6" value="net5.0/6">
-                        <label for="fixedprice">.NET 5.0/6</label><br>
-                        <input type="checkbox" id="typeskills" name="net" value="net">
-                        <label for="fixedprice">.NET</label><br>
-                        <input type="checkbox" id="typeskills" name="php" value="php">
-                        <label for="fixedprice">PHP</label><br>
-                        <input type="checkbox" id="typeskills" name="css" value="css">
-                        <label for="fixedprice">CSS</label><br>
-
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="or enter skills" aria-label="or enter skills" aria-describedby="button-addon2">
-                            <div class="input-group-append">
-                                <button class="btn btn-outline-secondary" type="button" id="buttonskills"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
-                                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-                                    </svg>
-                                </button>
+        <div class="container-fluid">
+            <div class="row d-flex justify-content-center">
+                <div class="col" style="margin-left: 80px;">
+                    <div class="wrapper border">
+                        <header>
+                            <h3>Budget</h3>
+                            <input type="checkbox" id="job" name="job" value="fixedprice">
+                            <label for="fixedprice">Fixed price project</label><br>
+                        </header>
+                        <div class="price-input">
+                            <div class="field">
+                                <span>Min</span>
+                                <input type="number" class="input-min" value="2500">
+                            </div>
+                            <div class="separator">-</div>
+                            <div class="field">
+                                <span>Max</span>
+                                <input type="number" class="input-max" value="7500">
                             </div>
                         </div>
-
-                    </div>
-                    <br>
-                    <div class="border-bottom">
-                        <h3>Languages</h3>
-                        <input type="checkbox" id="languages" name="english" value="english">
-                        <label for="fixedprice">English</label><br>
-                        <input type="checkbox" id="languages" name="spanish" value="spanish">
-                        <label for="fixedprice">Spanish</label><br>
-                        <input type="checkbox" id="languages" name="german" value="german">
-                        <label for="fixedprice">German</label><br>
-                        <input type="checkbox" id="languages" name="french" value="french">
-                        <label for="fixedprice">French</label><br>
-                        <input type="checkbox" id="languages" name="portuguese" value="portuguese">
-                        <label for="fixedprice">Portuguese</label><br>
-
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="or enter languages" aria-label="or enter languages" aria-describedby="button-addon2">
-                            <div class="input-group-append">
-                                <button class="btn btn-outline-secondary" type="button" id="buttonlanguages"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
-                                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-                                    </svg>
-                                </button>
+                        <div class="slider">
+                            <div class="progress"></div>
+                        </div>
+                        <div class="range-input">
+                            <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+                            <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+                        </div>
+                        <br>
+                        <header>
+                            <input type="checkbox" id="job" name="job" value="hourlyprojects">
+                            <label for="hourlyprojects">Hourly Projects</label><br>
+                        </header>
+                        <div class="price-input">
+                            <div class="field">
+                                <span>Min</span>
+                                <input type="number" class="input-min" value="2500">
+                            </div>
+                            <div class="separator">-</div>
+                            <div class="field">
+                                <span>Max</span>
+                                <input type="number" class="input-max" value="7500">
                             </div>
                         </div>
-
+                        <div class="slider">
+                            <div class="progress"></div>
+                        </div>
+                        <div class="range-input">
+                            <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+                            <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+                        </div>
+                        <br>
+                        <select class="custom-select" id="duration" aria-label="duration">
+                            <option selected>All Duration</option>
+                            <option value="1">Less than 1 week</option>
+                            <option value="2">1 week to 4 weeks</option>
+                            <option value="3">1 month to 3 months</option>
+                            <option value="4">3 months to 6 months</option>
+                            <option value="5">over 6 months/ongoing</option>
+                            <option value="6">unspecified</option>
+                        </select>
+                        <br>
+                        <br>
+                        <header>
+                            <input type="checkbox" id="job" name="job" value="contests">
+                            <label for="contests">Contests</label><br>
+                        </header>
+                        <div class="price-input">
+                            <div class="field">
+                                <span>Min</span>
+                                <input type="number" class="input-min" value="2500">
+                            </div>
+                            <div class="separator">-</div>
+                            <div class="field">
+                                <span>Max</span>
+                                <input type="number" class="input-max" value="7500">
+                            </div>
+                        </div>
+                        <div class="slider">
+                            <div class="progress"></div>
+                        </div>
+                        <div class="range-input">
+                            <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+                            <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+                        </div>
+                    </div>
+                    <br><div class="wrapper border">
+                        <div class="border-bottom">
+                            <h3>Type</h3>
+                            <input type="checkbox" id="typejob" name="local" value="local">
+                            <label for="fixedprice">Local Jobs</label><br>
+                            <input type="checkbox" id="typejob" name="featured" value="featured">
+                            <label for="fixedprice">Featured Jobs</label><br>
+                            <input type="checkbox" id="typejob" name="recruiter" value="recruiter">
+                            <label for="fixedprice">Recruiter Jobs</label><br>
+                            <input type="checkbox" id="typejob" name="fulltime" value="fulltime">
+                            <label for="fixedprice">Full Time Jobs</label><br>
+                        </div>
+                        <br>
+                        <div class="border-bottom">
+                            <h3>Skills</h3>
+                            <input type="checkbox" id="typeskills" name="net5.0/6" value="net5.0/6">
+                            <label for="fixedprice">.NET 5.0/6</label><br>
+                            <input type="checkbox" id="typeskills" name="net" value="net">
+                            <label for="fixedprice">.NET</label><br>
+                            <input type="checkbox" id="typeskills" name="php" value="php">
+                            <label for="fixedprice">PHP</label><br>
+                            <input type="checkbox" id="typeskills" name="css" value="css">
+                            <label for="fixedprice">CSS</label><br>
+    
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="or enter skills" aria-label="or enter skills" aria-describedby="button-addon2">
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-secondary" type="button" id="buttonskills"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+    
+                        </div>
+                        <br>
+                        <div class="border-bottom">
+                            <h3>Languages</h3>
+                            <input type="checkbox" id="languages" name="english" value="english">
+                            <label for="fixedprice">English</label><br>
+                            <input type="checkbox" id="languages" name="spanish" value="spanish">
+                            <label for="fixedprice">Spanish</label><br>
+                            <input type="checkbox" id="languages" name="german" value="german">
+                            <label for="fixedprice">German</label><br>
+                            <input type="checkbox" id="languages" name="french" value="french">
+                            <label for="fixedprice">French</label><br>
+                            <input type="checkbox" id="languages" name="portuguese" value="portuguese">
+                            <label for="fixedprice">Portuguese</label><br>
+    
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="or enter languages" aria-label="or enter languages" aria-describedby="button-addon2">
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-secondary" type="button" id="buttonlanguages"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+    
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="wrapper col-md-8 border" style="margin-right: 80px;">
-                <div class="row">
-                    <div class="col-md-9 border-bottom">
-                        <h2>Heading</h2>
-                        <p>Will you do the same for me? It's time to face the music I'm no longer your muse. Heard it's beautiful, be the judge and my girls gonna take a vote. I can feel a phoenix inside of me. Heaven is jealous of our love, angels are crying from up above. Yeah, you take me to utopia.</p>
+    
+                <div class="wrapper col-md-8 border">
+                    <div class="row">
+                        <div class="col-md-9 border-bottom">
+                            <h2>Heading</h2>
+                            <p>Will you do the same for me? It's time to face the music I'm no longer your muse. Heard it's beautiful, be the judge and my girls gonna take a vote. I can feel a phoenix inside of me. Heaven is jealous of our love, angels are crying from up above. Yeah, you take me to utopia.</p>
+                        </div>
+                        <div class="col border-bottom">
+                            <h2>Heading</h2>
+                            <br>
+                            <button class="btn btn-primary-outline PageJobs-sectionHero-cta">Apply</button>
+                        </div>
                     </div>
-                    <div class="col border-bottom">
-                        <h2>Heading</h2>
-                        <br>
-                        <button class="btn btn-primary-outline PageJobs-sectionHero-cta">I want to Hire</button>
+                    <br><div class="row">
+                        <div class="col-md-9 border-bottom">
+                            <h2>Heading</h2>
+                            <p>Will you do the same for me? It's time to face the music I'm no longer your muse. Heard it's beautiful, be the judge and my girls gonna take a vote. I can feel a phoenix inside of me. Heaven is jealous of our love, angels are crying from up above. Yeah, you take me to utopia.</p>
+                        </div>
+                        <div class="col border-bottom">
+                            <h2>Heading</h2>
+                            <br>
+                            <button class="btn btn-primary-outline PageJobs-sectionHero-cta">Apply</button>
+                        </div>
                     </div>
-                </div>
-                <br><div class="row">
-                    <div class="col-md-9 border-bottom">
-                        <h2>Heading</h2>
-                        <p>Will you do the same for me? It's time to face the music I'm no longer your muse. Heard it's beautiful, be the judge and my girls gonna take a vote. I can feel a phoenix inside of me. Heaven is jealous of our love, angels are crying from up above. Yeah, you take me to utopia.</p>
+                    <br><div class="row">
+                        <div class="col-md-9 border-bottom">
+                            <h2>Heading</h2>
+                            <p>Will you do the same for me? It's time to face the music I'm no longer your muse. Heard it's beautiful, be the judge and my girls gonna take a vote. I can feel a phoenix inside of me. Heaven is jealous of our love, angels are crying from up above. Yeah, you take me to utopia.</p>
+                        </div>
+                        <div class="col border-bottom">
+                            <h2>Heading</h2>
+                            <br>
+                            <button class="btn btn-primary-outline PageJobs-sectionHero-cta">Apply</button>
+                        </div>
                     </div>
-                    <div class="col border-bottom">
-                        <h2>Heading</h2>
-                        <br>
-                        <button class="btn btn-primary-outline PageJobs-sectionHero-cta">I want to Hire</button>
+                    <br><div class="row">
+                        <div class="col-md-9 border-bottom">
+                            <h2>Heading</h2>
+                            <p>Will you do the same for me? It's time to face the music I'm no longer your muse. Heard it's beautiful, be the judge and my girls gonna take a vote. I can feel a phoenix inside of me. Heaven is jealous of our love, angels are crying from up above. Yeah, you take me to utopia.</p>
+                        </div>
+                        <div class="col border-bottom">
+                            <h2>Heading</h2>
+                            <br>
+                            <button class="btn btn-primary-outline PageJobs-sectionHero-cta">Apply</button>
+                        </div>
                     </div>
-                </div>
-                <br><div class="row">
-                    <div class="col-md-9 border-bottom">
-                        <h2>Heading</h2>
-                        <p>Will you do the same for me? It's time to face the music I'm no longer your muse. Heard it's beautiful, be the judge and my girls gonna take a vote. I can feel a phoenix inside of me. Heaven is jealous of our love, angels are crying from up above. Yeah, you take me to utopia.</p>
+                    <br><div class="row">
+                        <div class="col-md-9 border-bottom">
+                            <h2>Heading</h2>
+                            <p>Will you do the same for me? It's time to face the music I'm no longer your muse. Heard it's beautiful, be the judge and my girls gonna take a vote. I can feel a phoenix inside of me. Heaven is jealous of our love, angels are crying from up above. Yeah, you take me to utopia.</p>
+                        </div>
+                        <div class="col border-bottom">
+                            <h2>Heading</h2>
+                            <br>
+                            <button class="btn btn-primary-outline PageJobs-sectionHero-cta">Apply</button>
+                        </div>
                     </div>
-                    <div class="col border-bottom">
-                        <h2>Heading</h2>
-                        <br>
-                        <button class="btn btn-primary-outline PageJobs-sectionHero-cta">I want to Hire</button>
+                    <br><div class="row">
+                        <div class="col-md-9 border-bottom">
+                            <h2>Heading</h2>
+                            <p>Will you do the same for me? It's time to face the music I'm no longer your muse. Heard it's beautiful, be the judge and my girls gonna take a vote. I can feel a phoenix inside of me. Heaven is jealous of our love, angels are crying from up above. Yeah, you take me to utopia.</p>
+                        </div>
+                        <div class="col border-bottom">
+                            <h2>Heading</h2>
+                            <br>
+                            <button class="btn btn-primary-outline PageJobs-sectionHero-cta">Apply</button>
+                        </div>
                     </div>
-                </div>
-                <br><div class="row">
-                    <div class="col-md-9 border-bottom">
-                        <h2>Heading</h2>
-                        <p>Will you do the same for me? It's time to face the music I'm no longer your muse. Heard it's beautiful, be the judge and my girls gonna take a vote. I can feel a phoenix inside of me. Heaven is jealous of our love, angels are crying from up above. Yeah, you take me to utopia.</p>
+                    <br><div class="row">
+                        <div class="col-md-9 border-bottom">
+                            <h2>Heading</h2>
+                            <p>Will you do the same for me? It's time to face the music I'm no longer your muse. Heard it's beautiful, be the judge and my girls gonna take a vote. I can feel a phoenix inside of me. Heaven is jealous of our love, angels are crying from up above. Yeah, you take me to utopia.</p>
+                        </div>
+                        <div class="col border-bottom">
+                            <h2>Heading</h2>
+                            <br>
+                            <button class="btn btn-primary-outline PageJobs-sectionHero-cta">Apply</button>
+                        </div>
                     </div>
-                    <div class="col border-bottom">
-                        <h2>Heading</h2>
-                        <br>
-                        <button class="btn btn-primary-outline PageJobs-sectionHero-cta">I want to Hire</button>
+                    <br><div class="row">
+                        <div class="col-md-9 border-bottom">
+                            <h2>Heading</h2>
+                            <p>Will you do the same for me? It's time to face the music I'm no longer your muse. Heard it's beautiful, be the judge and my girls gonna take a vote. I can feel a phoenix inside of me. Heaven is jealous of our love, angels are crying from up above. Yeah, you take me to utopia.</p>
+                        </div>
+                        <div class="col border-bottom">
+                            <h2>Heading</h2>
+                            <br>
+                            <button class="btn btn-primary-outline PageJobs-sectionHero-cta">Apply</button>
+                        </div>
                     </div>
-                </div>
-                <br><div class="row">
-                    <div class="col-md-9 border-bottom">
-                        <h2>Heading</h2>
-                        <p>Will you do the same for me? It's time to face the music I'm no longer your muse. Heard it's beautiful, be the judge and my girls gonna take a vote. I can feel a phoenix inside of me. Heaven is jealous of our love, angels are crying from up above. Yeah, you take me to utopia.</p>
+                    <br><div class="row">
+                        <div class="col-md-9 border-bottom">
+                            <h2>Heading</h2>
+                            <p>Will you do the same for me? It's time to face the music I'm no longer your muse. Heard it's beautiful, be the judge and my girls gonna take a vote. I can feel a phoenix inside of me. Heaven is jealous of our love, angels are crying from up above. Yeah, you take me to utopia.</p>
+                        </div>
+                        <div class="col border-bottom">
+                            <h2>Heading</h2>
+                            <br>
+                            <button class="btn btn-primary-outline PageJobs-sectionHero-cta">Apply</button>
+                        </div>
                     </div>
-                    <div class="col border-bottom">
-                        <h2>Heading</h2>
-                        <br>
-                        <button class="btn btn-primary-outline PageJobs-sectionHero-cta">I want to Hire</button>
+                    <br><div class="row">
+                        <div class="col-md-9 border-bottom">
+                            <h2>Heading</h2>
+                            <p>Will you do the same for me? It's time to face the music I'm no longer your muse. Heard it's beautiful, be the judge and my girls gonna take a vote. I can feel a phoenix inside of me. Heaven is jealous of our love, angels are crying from up above. Yeah, you take me to utopia.</p>
+                        </div>
+                        <div class="col border-bottom">
+                            <h2>Heading</h2>
+                            <br>
+                            <button class="btn btn-primary-outline PageJobs-sectionHero-cta">Apply</button>
+                        </div>
                     </div>
-                </div>
-                <br><div class="row">
-                    <div class="col-md-9 border-bottom">
-                        <h2>Heading</h2>
-                        <p>Will you do the same for me? It's time to face the music I'm no longer your muse. Heard it's beautiful, be the judge and my girls gonna take a vote. I can feel a phoenix inside of me. Heaven is jealous of our love, angels are crying from up above. Yeah, you take me to utopia.</p>
+                    <br><div class="row">
+                        <div class="col-md-9 border-bottom">
+                            <h2>Heading</h2>
+                            <p>Will you do the same for me? It's time to face the music I'm no longer your muse. Heard it's beautiful, be the judge and my girls gonna take a vote. I can feel a phoenix inside of me. Heaven is jealous of our love, angels are crying from up above. Yeah, you take me to utopia.</p>
+                        </div>
+                        <div class="col border-bottom">
+                            <h2>Heading</h2>
+                            <br>
+                            <button class="btn btn-primary-outline PageJobs-sectionHero-cta">Apply</button>
+                        </div>
                     </div>
-                    <div class="col border-bottom">
-                        <h2>Heading</h2>
-                        <br>
-                        <button class="btn btn-primary-outline PageJobs-sectionHero-cta">I want to Hire</button>
-                    </div>
-                </div>
-                <br><div class="row">
-                    <div class="col-md-9 border-bottom">
-                        <h2>Heading</h2>
-                        <p>Will you do the same for me? It's time to face the music I'm no longer your muse. Heard it's beautiful, be the judge and my girls gonna take a vote. I can feel a phoenix inside of me. Heaven is jealous of our love, angels are crying from up above. Yeah, you take me to utopia.</p>
-                    </div>
-                    <div class="col border-bottom">
-                        <h2>Heading</h2>
-                        <br>
-                        <button class="btn btn-primary-outline PageJobs-sectionHero-cta">I want to Hire</button>
-                    </div>
-                </div>
-                <br><div class="row">
-                    <div class="col-md-9 border-bottom">
-                        <h2>Heading</h2>
-                        <p>Will you do the same for me? It's time to face the music I'm no longer your muse. Heard it's beautiful, be the judge and my girls gonna take a vote. I can feel a phoenix inside of me. Heaven is jealous of our love, angels are crying from up above. Yeah, you take me to utopia.</p>
-                    </div>
-                    <div class="col border-bottom">
-                        <h2>Heading</h2>
-                        <br>
-                        <button class="btn btn-primary-outline PageJobs-sectionHero-cta">I want to Hire</button>
-                    </div>
-                </div>
-                <br><div class="row">
-                    <div class="col-md-9 border-bottom">
-                        <h2>Heading</h2>
-                        <p>Will you do the same for me? It's time to face the music I'm no longer your muse. Heard it's beautiful, be the judge and my girls gonna take a vote. I can feel a phoenix inside of me. Heaven is jealous of our love, angels are crying from up above. Yeah, you take me to utopia.</p>
-                    </div>
-                    <div class="col border-bottom">
-                        <h2>Heading</h2>
-                        <br>
-                        <button class="btn btn-primary-outline PageJobs-sectionHero-cta">I want to Hire</button>
-                    </div>
-                </div>
-                <br><div class="row">
-                    <div class="col-md-9 border-bottom">
-                        <h2>Heading</h2>
-                        <p>Will you do the same for me? It's time to face the music I'm no longer your muse. Heard it's beautiful, be the judge and my girls gonna take a vote. I can feel a phoenix inside of me. Heaven is jealous of our love, angels are crying from up above. Yeah, you take me to utopia.</p>
-                    </div>
-                    <div class="col border-bottom">
-                        <h2>Heading</h2>
-                        <br>
-                        <button class="btn btn-primary-outline PageJobs-sectionHero-cta">I want to Hire</button>
-                    </div>
-                </div>
-                <br><div class="row">
-                    <div class="col-md-9 border-bottom">
-                        <h2>Heading</h2>
-                        <p>Will you do the same for me? It's time to face the music I'm no longer your muse. Heard it's beautiful, be the judge and my girls gonna take a vote. I can feel a phoenix inside of me. Heaven is jealous of our love, angels are crying from up above. Yeah, you take me to utopia.</p>
-                    </div>
-                    <div class="col border-bottom">
-                        <h2>Heading</h2>
-                        <br>
-                        <button class="btn btn-primary-outline PageJobs-sectionHero-cta">I want to Hire</button>
-                    </div>
-                </div>
-                <br><div class="row">
-                    <div class="col-md-9">
-                        <h2>Heading</h2>
-                        <p>Will you do the same for me? It's time to face the music I'm no longer your muse. Heard it's beautiful, be the judge and my girls gonna take a vote. I can feel a phoenix inside of me. Heaven is jealous of our love, angels are crying from up above. Yeah, you take me to utopia.</p>
-                    </div>
-                    <div class="col">
-                        <h2>Heading</h2>
-                        <br>
-                        <button class="btn btn-primary-outline PageJobs-sectionHero-cta">I want to Hire</button>
+                    <br><div class="row">
+                        <div class="col-md-9">
+                            <h2>Heading</h2>
+                            <p>Will you do the same for me? It's time to face the music I'm no longer your muse. Heard it's beautiful, be the judge and my girls gonna take a vote. I can feel a phoenix inside of me. Heaven is jealous of our love, angels are crying from up above. Yeah, you take me to utopia.</p>
+                        </div>
+                        <div class="col">
+                            <h2>Heading</h2>
+                            <br>
+                            <button class="btn btn-primary-outline PageJobs-sectionHero-cta">Apply</button>
+                        </div>
                     </div>
                 </div>
             </div>
