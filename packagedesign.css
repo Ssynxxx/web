@@ -22,7 +22,7 @@ html, body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: blanchedalmond;
+    color: white;
     font-weight: 700;
     text-transform: uppercase;
     animation: fadeIn  5s;
