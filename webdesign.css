@@ -9,7 +9,7 @@ html, body {
 
 .main-image {
     position: relative;
-    background: url(img/pexels-tranmautritam-251225.jpg) no-repeat center;
+    background: url(img/pexels-negative-space-34140.jpg) no-repeat center;
     background-size: cover;
     height: 969px;
     padding-right: auto;
@@ -22,7 +22,7 @@ html, body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: #fff;
+    color: #d8d1bf;
     font-weight: 700;
     text-transform: uppercase;
     animation: fadeIn  5s;
