@@ -217,7 +217,7 @@ ul{
 }
 
 .footer{
-	background-color: #fe4066;
+	background-color: #24262b;
 	padding: 70px 0;
 	font-family: 'Poppins', sans-serif;
 }
@@ -233,7 +233,7 @@ ul{
 
 .footer-col h4{
 	font-size: 18px;
-	color: black;
+	color: #ffffff;
 	text-transform: capitalize;
 	margin-bottom: 	30px;
 	font-weight: 500;
@@ -258,16 +258,16 @@ ul{
 .footer-col ul li a{
 	font-size: 16px;
 	text-transform: capitalize;
-	color: #1a1d21;
+	color: #ffffff;
 	text-decoration: none;
 	font-weight: 300;
-	
+	color: #bbbbbb;
 	display: block;
 	transition: all 0.3s ease;
 }
 
 .footer-col ul li a:hover{
-	color: black;
+	color: #ffffff;
 	padding-left: 8px;
 }
 
@@ -280,7 +280,7 @@ ul{
 	text-align: center;
 	line-height: 40px;
 	border-radius: 50%;
-	color: black;
+	color: #ffffff;
 	transition: all 0.5s ease;
 }
 
