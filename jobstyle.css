@@ -33,6 +33,11 @@ body{font-family: 'Montserrat' sans-serif;
 	border-color: #ccc;
   }
 
+.btn-pink{
+	color: white;
+	background-color: #fe4066;
+}
+
 .btn-primary-outline:hover {text-decoration: none;
 	color:#fe4066;
 	background-color:white; 
