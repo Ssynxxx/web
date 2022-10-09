@@ -33,13 +33,13 @@
     justify-content: space-around;
 }
 .text h1{
-    color: #ffcc74;
+    color: #fe4066;
     font-size: 85px;
     margin-bottom: 20px;
     text-transform: capitalize;
 }
 .text h5{
-    color: white;
+    color: black;
     font-size: 25px;
     margin-bottom: 25px;
     text-transform: capitalize;
