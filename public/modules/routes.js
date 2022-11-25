@@ -19,12 +19,12 @@ router.get('/findfreelancer', function (req, res) {
     res.render('pages/findfreelancers');
 });
 
-router.get('/abouts', function (req, res) {
+router.get('/about', function (req, res) {
     res.render('pages/about');
 });
 
 router.get('/logins', function (req, res) {
-    res.render('pages/login');
+    res.render('pages/loginpage');
 });
 
 
