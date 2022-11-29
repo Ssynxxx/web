@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Login or SignUp</title>
 	<link rel="stylesheet" type="text/css" href="/css/loginstyle.css">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 </head>
 <body>
 	<div class="hero">
@@ -22,19 +23,19 @@
 				<a href="https://www.twitter.com/login"><img src="img/login/twitter.png"></a>
 			</div>
 			<br>
-			<form id="login" class="input-group">
-				<input type="text" class="input-field" placeholder="Email" required>
-				<input type="password" class="input-field" placeholder="Password" required>
+			<form id="login" method="post" class="input-group" action="/api/auth/login">
+				<input name="email" type="text" class="input-field" placeholder="Email" required>
+				<input name="password" type="password" class="input-field" placeholder="Password" required>
 				<input type="checkbox" class="check-box"><span>Remember Password</span>
 				<button type="submit" class="submit-button">Log In</button>
 
 			</form>
-			<form id="signup" class="input-group">
-				<input type="text" class="input-field" placeholder="User Id" required>
-				<input type="text" class="input-field" placeholder="Email" required>
-				<input type="password" class="input-field" placeholder="Password" required>
+			<form id="signup" method="post" class="input-group" action="/api/auth/register">
+				<input name="email" type="text" class="input-field" placeholder="Email" required>
+				<input name="full_name" type="text" class="input-field" placeholder="Full Name" required>
+				<input name="password" type="password" class="input-field" placeholder="Password" required>
 				<input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
-				<button type="submit" class="submit-button">Sign Up</button>
+				<button type="submit" class="submit-button" href="/logins">Sign Up</button>
 
 			</form>
 		</div>

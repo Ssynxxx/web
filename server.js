@@ -1,10 +1,15 @@
 var express = require('express');
-const ejs = require('ejs');
+const config = require('./public/modules/core/config');
+const app = require('./public/modules/core/server');
 
-const config = require('./public/modules/config');
-const port = config.port;
-
-var app = express();
+app.listen(config.port, (err) => {
+  if (err) {
+    console.log(err);
+    process.exit(1);
+  } else {
+    console.log(`Server runs at port ${config.port}`);
+  }
+});
 
 app.use(express.static('public'));
 
@@ -14,10 +19,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(express.json());
 
-const db = require('./public/modules/models');
-
-app.listen(port);
-console.log(`listening to port`,port);
+const db = require('./public/modules/models/index');
 
 const routes = require('./public/modules/routes');
 app.use('/', routes);

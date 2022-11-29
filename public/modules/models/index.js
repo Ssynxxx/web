@@ -1,22 +1,20 @@
 const mongoose = require('mongoose');
 
-const Login = require('./login');
-const SignUp = require('./signup');
+const Users = require('./user');
 
-const config = require('../config');
+const config = require('../core/config')
 
-const connectionString = `${config.db}`;
-
-mongoose.connect(connectionString);
+mongoose.connect(
+  'mongodb+srv://WEBEE21:1234567890@test1.aguevyu.mongodb.net/?retryWrites=true&w=majority',
+);
 
 const db = mongoose.connection;
 
 db.once('open', () => {
-  console.log('Connected to MongoDB');
+  console.log('Connected to MongoDB server!');
 });
 
 module.exports = {
   db,
-  Login,
-  SignUp,
+  Users,
 };
