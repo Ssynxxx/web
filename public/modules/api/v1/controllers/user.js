@@ -2,6 +2,7 @@ const jwt = require('jsonwebtoken');
 
 const config = require('../../../core/config');
 const { Users } = require('../../../models');
+const { Jobs } = require('../../../models');
 const { hashPassword, comparePassword } = require('../../../helpers/crypto');
 
 async function create(email, fullName, password) {
@@ -14,6 +15,15 @@ async function create(email, fullName, password) {
   });
 
   return newUser.save();
+}
+
+async function createJobs(title, description) {
+  const newJobs = new Jobs({
+    title,
+    description,
+  });
+
+  return newJobs.save();
 }
 
 async function findByEmail(email) {
@@ -57,13 +67,12 @@ async function updateUser(id) {
   return userToUpdate
 }
 
-
-
 module.exports = {
   create,
   findByEmail,
   login,
   generateToken,
   findById,
-  updateUser
+  updateUser,
+  createJobs
 };

@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 
 const Users = require('./user');
+const Jobs = require('./jobs');
 
 const config = require('../core/config')
 
@@ -17,4 +18,5 @@ db.once('open', () => {
 module.exports = {
   db,
   Users,
+  Jobs,
 };

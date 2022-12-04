@@ -18,7 +18,6 @@ module.exports = (app) => {
     async (req, res) => 
       res.json({
       status: 'OK',
-      email: req.user.email,
     }).status(200),
   );
 
@@ -50,6 +49,17 @@ module.exports = (app) => {
     },
   );
 
+
+  route.post(
+    '/createjobs',
+    async(req, res) => {
+      userController.createJobs(
+      req.body.title,
+      req.body.description,
+    );
+    res.redirect('/protected')},
+  )
+  
   route.post(
     '/login',
     celebrate(authValidator.login),
@@ -96,7 +106,7 @@ module.exports = (app) => {
   route.post('/token', isAuth, (req, res) => {
       // in case you want to read everything from the request header
       // console.log({req})
-      res.status(200).send("token correct: access granted!")
+      res.send(req.user.id)
   })
 
 };

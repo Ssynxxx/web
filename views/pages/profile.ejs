@@ -8,11 +8,10 @@
     </head>
     <body>
         <div class="box">
-            <img src="profile.jpg" alt="" class="box-img">
-            <h1 action=""></h1>
-            <h5>
-                Web Devloper - Web Designer
-            </h5>
+            <div class="container">
+                <img src="img/img_avatar.png" alt="Avatar" class="image" style="width:100%">
+            </div>
+            <h5>user id: <%= user %></h5>
             <ul>
             <form class="form-inline my-2 my-lg-0" action="/api/auth/logout">
                 <button class="submit-button" type="submit">Logout</button>

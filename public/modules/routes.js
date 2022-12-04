@@ -1,8 +1,6 @@
 const express = require('express');
 const router = express.Router();
 const isAuth = require('./api/v1/middlewares/isAuth');
-const auth = require('./api/v1/routes/auth');
-
 
 router.use(express.urlencoded({ extended: true }));
 
@@ -22,8 +20,10 @@ router.get('/findjob', function (req, res) {
     res.render('pages/findjobs');
 });
 
-router.get('/profile', function (req, res) {
-    res.render('pages/profile');
+router.get('/profile', isAuth, async function (req, res) {
+    res.render('pages/profile',{
+        user: req.user.id
+    });
 });
 
 router.get('/findfreelancer', function (req, res) {
@@ -72,6 +72,10 @@ router.get('/categorys/webdesign', function (req, res) {
 
 router.get('/categorys/wordpress', function (req, res) {
     res.render('pages/category/wordpress');
+});
+
+router.get('/categorys/jobs', function (req, res) {
+    res.render('pages/templateapply');
 });
 
 module.exports = router;
