@@ -5,11 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/style.css">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css" integrity="sha512-eMxdaSf5XW3ZW1wZCrWItO2jZ7A9FhuZfjVdztr7ZsKNOmt6TUMTQgfpNoVRyfPE5S9BC0A4suXzsGSrAOWcoQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
-        <link rel="stylesheet" href="/css/style.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js" integrity="sha512-j+F4W//4Pu39at5I8HC8q2l1BNz4OF3ju39HyWeqKQagW6ww3ZF9gFcu8rzUbyTDY7gEo/vqqzGte0UPpo65QQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
         <title>Freelancing</title>
@@ -18,7 +18,40 @@
     <body>
 
         <header class="header">
-            <%- include('../partials/_header.ejs') %>
+            <div class="header-inner">
+                <div class="container-fluid px-lg-5">
+                    <nav class="navbar navbar-expand-lg my-navbar">
+                        <a class="navbar-brand" href="#"><span class="logo">
+                            <img src="" class="img-fluid" style="width:30px; margin:-3px 0px 0px 0px;">Freelancing</span>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"><i class="fas fa-bars" style="margin:5px 0px 0px 0px;"></i></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav m-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">How It Works<span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/logins">Find Job<span class="sr-only"></span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/logins">Find Freelancers<span class="sr-only"></span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#TopJobs">Top Jobs<span class="sr-only"></span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/about">About Us<span class="sr-only"></span></a>
+                                </li>
+                            </ul>
+                            <form class="form-inline my-2 my-lg-0">
+                                <a class="header-btn my-2 my-sm-0" type="submit" href="/logins">Log In</a>
+                            </form>
+                        </div>
+                    </nav>
+                </div>
+            </div>
         </header>
 
 
@@ -29,8 +62,8 @@
                         <div class="banner-con text-center">
                             <p class="first-title">Hire the best freelancers for any job, online.</p>
                             <p class="banner-des">Millions of people use freelancer.com to turn their ideas into reality.</p>
-                            <a href="/findjob" target="_blank" class="banner-btn">Find Jobs</a>
-                            <a href="/findfreelancer" target="_blank" class="banner-btn">Hire a Freelancers</a>
+                            <a href="/logins" target="_blank" class="banner-btn">Find Jobs</a>
+                            <a href="/logins" target="_blank" class="banner-btn">Hire a Freelancers</a>
                         </div>
                     </div>
                 </div>
@@ -139,21 +172,21 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="/img/carousel/searchjob.jpg" class="d-block w-100" style="max-width: 100%;" alt="...">
+                        <img src="img/carousel/searchjob.jpg" class="d-block w-100" style="max-width: 100%;" alt="...">
                             <div class="carousel-caption d-none d-md-block">
                             <h5>Find Jobs</h5>
                             <p>Looking for a job depending on your skills. Don't waste your skills.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="/img/carousel/freelancer.jpg" class="d-block w-100" style="max-width: 100%;" alt="...">
+                        <img src="img/carousel/freelancer.jpg" class="d-block w-100" style="max-width: 100%;" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Find Freelancer</h5>
                             <p>No job is too big or too small. We've got freelancers for jobs of any size or budget, across 1800+ skills. No job is too complex. We can get it done!.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="/img/carousel/shakehand.jpg" class="d-block w-100" style="max-width: 100%;" alt="...">
+                        <img src="img/carousel/shakehand.jpg" class="d-block w-100" style="max-width: 100%;" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>We're here to help</h5>
                             <p>Our talented team of recruiters can help you find the best freelancer for the job and our technical co-pilots can even manage the project for you.</p>
@@ -177,8 +210,8 @@
                         <div class="col-md-4">
                             <div class="card mb-4 shadow-sm">
                                 <div class="image">
-                                    <img class="image__img" src="/img/jobs/logo design.jpg" class="d-block w-100" style="max-width: 100%;"></img>
-                                    <a class="image__overlay" href="/categorys/logodesign">
+                                    <img class="image__img" src="img/jobs/logo design.jpg" class="d-block w-100" style="max-width: 100%;"></img>
+                                    <a class="image__overlay" href="/logins">
                                         <button type="button" class="btn btn-light">MORE INFO</button>
                                     </a>
                                 </div>
@@ -191,8 +224,8 @@
                         <div class="col-md-4">
                             <div class="card mb-4 shadow-sm">
                                 <div class="image">
-                                    <img class="image__img" src="/img/jobs/web design.jpg" class="d-block w-100" style="max-width: 100%;"></img>
-                                    <a class="image__overlay" href="/categorys/webdesign">
+                                    <img class="image__img" src="img/jobs/web design.jpg" class="d-block w-100" style="max-width: 100%;"></img>
+                                    <a class="image__overlay" href="/logins">
                                         <button type="button" class="btn btn-light">MORE INFO</button>
                                     </a>
                                 </div>
@@ -205,8 +238,8 @@
                         <div class="col-md-4">
                             <div class="card mb-4 shadow-sm">
                                 <div class="image">
-                                    <img class="image__img" src="/img/jobs/package.jpg" class="d-block w-100" style="max-width: 100%;"></img>
-                                    <a class="image__overlay" href="/categorys/packagedesign">
+                                    <img class="image__img" src="img/jobs/package.jpg" class="d-block w-100" style="max-width: 100%;"></img>
+                                    <a class="image__overlay" href="/logins">
                                         <button type="button" class="btn btn-light">MORE INFO</button>
                                     </a>
                                 </div>
@@ -219,8 +252,8 @@
                         <div class="col-md-4">
                             <div class="card mb-4 shadow-sm">
                                 <div class="image">
-                                    <img class="image__img" src="/img/jobs/mobile design.jpg" class="d-block w-100" style="max-width: 100%;"></img>
-                                    <a class="image__overlay" href="/categorys/mobiledesign">
+                                    <img class="image__img" src="img/jobs/mobile design.jpg" class="d-block w-100" style="max-width: 100%;"></img>
+                                    <a class="image__overlay" href="/logins">
                                         <button type="button" class="btn btn-light">MORE INFO</button>
                                     </a>
                                 </div>
@@ -233,8 +266,8 @@
                         <div class="col-md-4">
                             <div class="card mb-4 shadow-sm">
                                 <div class="image">
-                                    <img class="image__img" src="/img/jobs/graphic design.jpg" class="d-block w-100" style="max-width: 100%;"></img>
-                                    <a class="image__overlay" href="/categorys/graphicdesign">
+                                    <img class="image__img" src="img/jobs/graphic design.jpg" class="d-block w-100" style="max-width: 100%;"></img>
+                                    <a class="image__overlay" href="/logins">
                                         <button type="button" class="btn btn-light">MORE INFO</button>
                                     </a>
                                 </div>
@@ -247,8 +280,8 @@
                         <div class="col-md-4">
                             <div class="card mb-4 shadow-sm">
                                 <div class="image">
-                                    <img class="image__img" src="/img/jobs/web.jpg" class="d-block w-100" style="max-width: 100%;"></img>
-                                    <a class="image__overlay" href="/categorys/fab">
+                                    <img class="image__img" src="img/jobs/web.jpg" class="d-block w-100" style="max-width: 100%;"></img>
+                                    <a class="image__overlay" href="/logins">
                                         <button type="button" class="btn btn-light">MORE INFO</button>
                                     </a>
                                 </div>
@@ -261,8 +294,8 @@
                         <div class="col-md-4">
                             <div class="card mb-4 shadow-sm">
                                 <div class="image">
-                                    <img class="image__img" src="/img/jobs/illustrator.jpg" class="d-block w-100" style="max-width: 100%;"></img>
-                                    <a class="image__overlay" href="/categorys/illustrator">
+                                    <img class="image__img" src="img/jobs/illustrator.jpg" class="d-block w-100" style="max-width: 100%;"></img>
+                                    <a class="image__overlay" href="/logins">
                                         <button type="button" class="btn btn-light">MORE INFO</button>
                                     </a>
                                 </div>
@@ -275,8 +308,8 @@
                         <div class="col-md-4">
                             <div class="card mb-4 shadow-sm">
                                 <div class="image">
-                                    <img class="image__img" src="/img/jobs/wordpress.jpg" class="d-block w-100" style="max-width: 100%;"></img>
-                                    <a class="image__overlay" href="/categorys/wordpress">
+                                    <img class="image__img" src="img/jobs/wordpress.jpg" class="d-block w-100" style="max-width: 100%;"></img>
+                                    <a class="image__overlay" href="/logins">
                                         <button type="button" class="btn btn-light">MORE INFO</button>
                                     </a>
                                 </div>
@@ -289,8 +322,8 @@
                         <div class="col-md-4">
                             <div class="card mb-4 shadow-sm">
                                 <div class="image">
-                                    <img class="image__img" src="/img/jobs/3d.jpg" class="d-block w-100" style="max-width: 100%;"></img>
-                                    <a class="image__overlay" href="/categorys/3dmodelling">
+                                    <img class="image__img" src="img/jobs/3d.jpg" class="d-block w-100" style="max-width: 100%;"></img>
+                                    <a class="image__overlay" href="/logins">
                                         <button type="button" class="btn btn-light">MORE INFO</button>
                                     </a>
                                 </div>
@@ -314,7 +347,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.5.1.js" ></script>
-        <script src="/js/script.js"></script>
+        <script src="js/script.js"></script>
   
     </body>
 </html>

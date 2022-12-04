@@ -15,27 +15,19 @@
 				<button type="button" class="toggle-btn" onclick="login()">Sign In</button>
 				<button type="button" class="toggle-btn" onclick="signup()">Sign up</button>
 			</div>
-			<div class="social-icons"><p>Or login with</p></div>
-			<div class="social-icons">
-				<a href="https://accounts.google.com"><img src="img/login/google.png"></a>
-				<a href="https://www.instagram.com/login"><img src="img/login/instagram.png"></a>
-				<a href="https://id-id.facebook.com/login"><img src="img/login/facebook.png"></a>
-				<a href="https://www.twitter.com/login"><img src="img/login/twitter.png"></a>
-			</div>
+			<h1 style="text-align: center;">Freelancing</h1>
 			<br>
 			<form id="login" method="post" class="input-group" action="/api/auth/login">
 				<input name="email" type="text" class="input-field" placeholder="Email" required>
 				<input name="password" type="password" class="input-field" placeholder="Password" required>
-				<input type="checkbox" class="check-box"><span>Remember Password</span>
 				<button type="submit" class="submit-button">Log In</button>
-
 			</form>
 			<form id="signup" method="post" class="input-group" action="/api/auth/register">
 				<input name="email" type="text" class="input-field" placeholder="Email" required>
 				<input name="full_name" type="text" class="input-field" placeholder="Full Name" required>
 				<input name="password" type="password" class="input-field" placeholder="Password" required>
 				<input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
-				<button type="submit" class="submit-button" href="/logins">Sign Up</button>
+				<button type="submit" class="submit-button">Sign Up</button>
 
 			</form>
 		</div>

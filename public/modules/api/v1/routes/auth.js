@@ -14,7 +14,8 @@ module.exports = (app) => {
   route.get(
     '/',
     isAuth,
-    async (req, res) => res.json({
+    async (req, res) => 
+      res.json({
       status: 'OK',
       email: req.user.email,
     }).status(200),
@@ -38,9 +39,7 @@ module.exports = (app) => {
           req.body.password,
         );
 
-        return res.json({
-          status: 'OK',
-        }).status(200);
+        return res.redirect('/logins');
       } catch (err) {
         return next(err);
       }
@@ -60,15 +59,31 @@ module.exports = (app) => {
         if (!user) {
           throw new Error('Wrong email or password!');
         }
+        const token = await userController.generateToken(user.id);
+        res.cookie('jwt', token, {httpOnly: true});
 
-        return res.json({
-          email: user.email,
-          full_name: user.full_name,
-          token: await userController.generateToken(user.id),
-        }).status(200);
+        return res.redirect('/protected');
       } catch (err) {
         return next(err);
       }
     },
   );
+
+  route.get('/cookie', async(req, res) => {
+    console.log('cookies: ', req.cookies)
+    res.status(200).json({
+      cookies: req.cookies,
+    })
+
+  });
+
+  //read more on middleware here: https://expressjs.com/en/guide/using-middleware.html
+  //token endpoint to check out how verifyToken middleware works
+  //if the token isn't correct then our middleware in /middleware/token gives an error responde
+  route.post('/token', isAuth, (req, res) => {
+      // in case you want to read everything from the request header
+      // console.log({req})
+      res.status(200).send("token correct: access granted!")
+  })
+
 };
