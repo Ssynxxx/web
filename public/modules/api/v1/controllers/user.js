@@ -44,6 +44,20 @@ async function findById(id) {
   return Users.findById(id);
 }
 
+async function updateUser(id) {
+  //get the user
+  const userToUpdate = await Users.findById(id)
+  //check if the user is already an admin
+  if(userToUpdate.role === 'Admin'){
+      throw new Error('The user is already an admin')
+  }
+  userToUpdate.role = "Admin"
+  userToUpdate.save()
+
+  return userToUpdate
+}
+
+
 
 module.exports = {
   create,
@@ -51,4 +65,5 @@ module.exports = {
   login,
   generateToken,
   findById,
+  updateUser
 };

@@ -2,6 +2,7 @@ const express = require('express');
 const { celebrate } = require('celebrate');
 
 const isAuth = require('../middlewares/isAuth');
+const updateuser = require('../middlewares/updateuser');
 
 const userController = require('../controllers/user');
 const authValidator = require('../validators/auth');
@@ -20,6 +21,9 @@ module.exports = (app) => {
       email: req.user.email,
     }).status(200),
   );
+
+  
+  route.put('/updateuser/:id', updateuser);
 
   route.post(
     '/register',
@@ -67,6 +71,15 @@ module.exports = (app) => {
         return next(err);
       }
     },
+  );
+
+  route.get(
+    '/logout',
+    isAuth, 
+    (req, res) => {
+      res.cookie('jwt', '', { maxAge: 1 });
+      res.redirect('/');
+    }
   );
 
   route.get('/cookie', async(req, res) => {
